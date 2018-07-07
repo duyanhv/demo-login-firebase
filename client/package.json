@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/firestore": "^0.14.1",
+    "@types/history": "^4.6.2",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.2",
+    "@types/react-router-redux": "^5.0.15",
+    "@types/redux-actions": "^2.3.0",
+    "antd": "^3.6.4",
+    "axios": "^0.18.0",
+    "history": "^4.7.2",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "react-scripts-ts-antd": "^2.15.1",
+    "redux": "3.7.2",
+    "redux-actions": "^2.4.0",
+    "redux-saga": "^0.16.0",
+    "tslint": "^5.10.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "start": "react-scripts-ts-antd start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "lint-staged": {
+    "*.{ts, tsx, js, json, css, less, md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
