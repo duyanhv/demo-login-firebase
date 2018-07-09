@@ -1,0 +1,41 @@
+[debug] [2018-07-09T10:50:42.581Z] ----------------------------------------------------------------------
+[debug] [2018-07-09T10:50:42.584Z] Command:       /Users/duyanh/.nvm/versions/node/v6.11.5/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2018-07-09T10:50:42.585Z] CLI Version:   3.19.1
+[debug] [2018-07-09T10:50:42.585Z] Platform:      darwin
+[debug] [2018-07-09T10:50:42.585Z] Node Version:  v6.11.5
+[debug] [2018-07-09T10:50:42.586Z] Time:          Mon Jul 09 2018 17:50:42 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:42.586Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-09T10:50:42.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-09T10:50:42.605Z] > authorizing via signed-in user
+[debug] [2018-07-09T10:50:42.609Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/test-a1c39  
+  
+ Mon Jul 09 2018 17:50:42 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:43.862Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-09T10:50:43.864Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/test-a1c39/tokens  
+  
+ Mon Jul 09 2018 17:50:43 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:44.696Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-09T10:50:44.698Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/test-a1c39  
+  
+ Mon Jul 09 2018 17:50:44 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:46.017Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/duyanh/Desktop/demo-firebase-express'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-09T10:50:47.082Z] Fetching environment
+[debug] [2018-07-09T10:50:47.085Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/703565782455:getServerAppConfig  
+  
+ Mon Jul 09 2018 17:50:47 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:47.085Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/703565782455/clients/_:getWebAppConfig  
+  
+ Mon Jul 09 2018 17:50:47 GMT+0700 (+07)
+[debug] [2018-07-09T10:50:47.756Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-09T10:50:47.814Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-09T10:50:47.815Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-09T10:50:47.871Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:8010/test-a1c39/us-central1/app

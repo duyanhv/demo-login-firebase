@@ -11,23 +11,27 @@ app.use(cors({ origin: true }));
 admin.initializeApp(functions.config().firebase);
 const db = admin.firestore();
 
-app.get('/getAllDocument', (request, response) => {
-    const activites = db.collection('activites');
-    activites.get()
-        .then((snapshot) => {
-            if (!snapshot) {
-                console.log('No document collection');
-                return;
-            }
-            const usersList = [];
-            snapshot.forEach((item) => {
-                usersList.push(item);
-            });
-            response.send(usersList);
-        })
-        .catch((error) => {
-            console.log(error);
+app.get('/getAllDocument', async (request, response) => {
+    try {
+        const activites = await db.collection('activites');
+        const snapshot = await activites.get();
+        if (!snapshot) {
+            console.log('No document collection');
+            return;
+        }
+        const usersList = [];
+        snapshot.forEach((item) => {
+            usersList.push(item);
         });
+        console.log('hey')
+        response.send(usersList);
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+app.get('/', (req, res) => {
+    res.send('hey')
 });
 
 app.get('/createActivitesCol', (request, response) => {
